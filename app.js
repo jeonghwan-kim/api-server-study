@@ -1,11 +1,11 @@
-'use strict';
+var express = require('express');
+var app = express();
+var user = require('./api/user/index.js');
 
-console.log('hello world');
+app.use('/users', user);
 
-console.log('foo');
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
 
-var name;
-
-name = 'chris';
-
-console.log('');
+module.exports = app;
