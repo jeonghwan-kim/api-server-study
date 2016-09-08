@@ -6,27 +6,9 @@
 ### 기본 
 
 - Node.js
-    - Structure: v8, single thread
-    - hello world
-    - nvm
-
 - 사용하는 툴 소개
-    - git
-    - github
-    - webstorm
-
 - HTTP에 대해
-    - method
-    - uri
-    - status
-    - body
-    - querystring
-    - params
-    - REST API
 - Express.js
-    - Host Static files
-    - Routing
-    
 - Test
     - supertest
     - mocha
