@@ -13,8 +13,7 @@
     - supertest
     - mocha
     - should
-    - istanbul
-    
+    - istanbul    
 - Documentation
     - Swagger
 

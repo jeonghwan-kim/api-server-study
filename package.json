@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/.bin/mocha ./api/**/*.spec.js --reporter=dot",
     "start": "node app"
   },
   "repository": {
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/jeonghwan-kim/api-server-study#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "^3.0.2",

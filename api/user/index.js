@@ -2,7 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 router.post('/', function (req, res) {
-  res.send('post /users');
+  res.status(201).json({
+    user: {
+      name: req.body.name
+    }
+  });
 });
 
 router.get('/me', function (req, res) {
@@ -10,7 +14,9 @@ router.get('/me', function (req, res) {
 });
 
 router.get('/', function (req, res) {
-  res.status(400).send('get /users');
+  res.json({
+    foo: 'bar'
+  });
 });
 
 
@@ -19,7 +25,7 @@ router.put('/', function (req, res) {
 });
 
 router.delete('/', function (req, res) {
-  res.send('delete /users');
+  res.status(204).send('delete /users');
 });
 
 module.exports = router;
